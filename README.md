@@ -1,7 +1,5 @@
 ## Como Compilar spring-native
 
-Para gerar build -> ./mvnw spring-boot:build-image
+Para gerar build -> mvn -Pnative spring-boot:build-image
 
-Checar nome do build gerado -> docker images
-
-Executar image -> docker run — name <image-name> -p 8080:8080 <image-name>:1.0.0
+Executar image -> $ docker run --rm -p 8080:8080 docker.io/library/myproject:0.0.1-SNAPSHOT
